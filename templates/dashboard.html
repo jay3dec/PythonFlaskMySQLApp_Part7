@@ -57,7 +57,7 @@
     			});
 
 			$(document).on('click','[id^="btn_"]',function(){
-				alert($(this).attr('id').split('_')[1]);
+				var spId = $(this).attr('id').split('_')[1];
 				$.ajax({
 					url: '/addUpdateLike',
 					method: 'POST',
